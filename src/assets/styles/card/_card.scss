@@ -1,0 +1,16 @@
+.card {
+    width: calc(50% - 12px);
+    background-color: $gray;
+    border-radius: 4px;
+    padding: 32px;
+    margin-top: 24px;
+    &:first-child {
+        margin-top: 0;
+    }
+    &:nth-child(2) {
+        margin-top: 0;
+    }
+    @include sm-block() {
+        margin-top: 0;
+    }
+}

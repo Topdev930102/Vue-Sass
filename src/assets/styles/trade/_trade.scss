@@ -1,0 +1,127 @@
+.trade {
+    &-top {
+        @include m-block() {
+            padding: 15px 15px 0;
+            background-color: $gray;
+            flex-wrap: wrap;
+            position: relative;
+            justify-content: center;
+            .btn {
+                border: none;
+                width: 20px;
+                overflow: hidden;
+                position: absolute;
+                top: 24px;
+                left: 20px;
+                padding: 0;
+                i {
+                    font: 18px;
+                    &::before {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        &__btns {
+            @include sm-block() {
+                width: 100%;
+                justify-content: space-around;
+                margin-top: 10px;
+            }
+            .btn-item {
+                cursor: pointer;
+                font-family: $noto;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 140%;
+                padding: 7px 12px;
+                margin-left: 5px;
+                &:first-child {
+                    margin-left: 0;
+                }
+                &.active {
+                    background: rgba(81, 118, 207, 0.32);
+                    border-radius: 4px;
+                    color: $blue;
+                    @include sm-block() {
+                        background-color: transparent;
+                        border-bottom: 1px solid $blue;
+                    }
+                }
+            }
+        }
+    }
+    &-body {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+        @include m-block() {
+            padding: 0 0 15px;
+        }
+    }
+    &-card {
+        @include sm-block() {
+            border-radius: 0;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 16px 20px;
+            display: none;
+        }
+        &:first-child {
+            @include sm-block() {
+                display: block;
+            }
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+            &__title {
+                font-family: $noto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 140%;
+                margin-right: 10px;
+                color: $white;
+            }
+            i {
+                font-size: 13px;
+                line-height: 140%;
+            }
+        }
+        .card-body {
+            padding: 20px 0;
+            @include sm-block() {
+                padding: 10px 0 16px;
+                font-size: 13px;
+                line-height: 140%;
+            }
+            .count {
+                font-family: $inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 140%;
+                color: $white;
+                border-radius: 2px;
+                padding: 0 5px;
+            }
+            p {
+                white-space: nowrap;
+            }
+        }
+        .card-footer {
+            padding-top: 16px;
+            border-top: 1px solid $black;
+            button {
+                border-color: $blue;
+                color: $blue;
+                &:hover {
+                    border-color: $yellow;
+                    color: $yellow;
+                }
+            }
+        }
+    }
+}

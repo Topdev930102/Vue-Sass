@@ -1,0 +1,63 @@
+.details {
+    &-card {
+        padding: 32px 40px 126px;
+        @include m-block() {
+            width: 100%;
+            padding: 16px 20px;
+        }
+        .card-header {
+            margin-bottom: 20px;
+            @include m-block() {
+                margin-bottom: 0;
+                padding-bottom: 16px;
+                border-bottom: 1px solid $black;
+            }
+            h4 {
+                font-family: $noto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 140%;
+            }
+            p {
+                margin-left: 32px;
+                @include m-block() {
+                    margin-left: auto;
+                }
+            }
+        }
+        .card-body {
+            &__item {
+                @include m-block() {
+                    padding-top: 16px;
+                    p {
+                        max-width: 200px;
+                        text-align: center;
+                        margin: 0 auto;
+                    }
+                }
+            }
+            p {
+                font-family: $noto;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 140%;
+            }
+            .text-big {
+                font-family: $noto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 140%;
+                span {
+                    font-family: $noto;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 140%;
+                }
+            }
+        }
+    }
+}

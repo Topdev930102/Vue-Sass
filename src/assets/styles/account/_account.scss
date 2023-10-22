@@ -1,0 +1,314 @@
+.account {
+    padding: 48px 0 55px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    @include m-block() {
+        padding: 20px 0;
+    }
+    &-body {
+        width: 60%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        @include l-block() {
+            width: 100%;
+            padding: 20px;
+        }
+        &.mobile {
+            .account-card {
+                height: 210px;
+                display: none;
+                &:first-child {
+                    display: block;
+                    .more {
+                        display: block;
+                    }
+                }
+                &__footer {
+                    display: flex;
+                    margin-top: auto;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    .more {
+                        width: 100%;
+                        margin-top: 20px;
+                        padding-top: 16px;
+                        border-top: 1px solid $black;
+                        font-family: $roboto;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 13px;
+                        line-height: 140%;
+                        text-align: right;
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+    &-card {
+        width: calc(50% - 9px);
+        height: 200px;
+        background-color: $gray;
+        border-radius: 8px;
+        padding: 16px 20px 28px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 18px;
+        cursor: pointer;
+        border: 1px solid $gray;
+        box-sizing: border-box;
+        transition: all 0.5s;
+        @include m-block() {
+            width: 100%;
+        }
+        &:hover {
+            border: 1px solid $blue;
+            .account-card__footer {
+                display: flex;
+                margin-top: auto;
+            }
+        }
+        &:first-child {
+            margin-top: 0;
+        }
+        &:nth-child(2) {
+            margin-top: 0;
+            @include m-block() {
+                margin-top: 18px;
+            }
+        }
+        &__title {
+            font-family: $noto;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 140%;
+        }
+        .subtitle {
+            font-family: $noto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 140%;
+            letter-spacing: -0.05em;
+            color: $white;
+        }
+        .package {
+            font-family: $noto;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 140%;
+            display: flex;
+            justify-content: end;
+            i {
+                opacity: 0.4;
+                margin-left: 3px;
+            }
+        }
+        .get {
+            font-family: $noto;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+            color: $white;
+            span {
+                color: $blue;
+                font-style: normal;
+                font-size: 13px;
+                margin-left: 12px;
+            }
+        }
+        &.empty {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            border: 1px dashed rgba(136, 139, 154, 0.5);
+            font-family: $noto;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 140%;
+            i {
+                font-size: 24px;
+                margin-bottom: 6px;
+            }
+        }
+        &__footer {
+            display: none;
+            button {
+                width: 24%;
+                display: flex;
+                justify-content: center;
+                white-space: nowrap;
+                &:first-child {
+                    width: 45%;
+                }
+            }
+            .more {
+                display: none;
+            }
+        }
+    }
+    &-sidebar {
+        width: 32%;
+        min-width: 366px;
+        @include l-block() {
+            width: 100%;
+            margin-top: 20px;
+        }
+        @include sm-block() {
+            margin-top: 0;
+        }
+    }
+    &-user {
+        width: 100%;
+        background-color: $gray;
+        border-radius: 4px;
+        padding: 32px;
+        &__img {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(180deg, #ADACB0 0%, #86878C 100%);
+            border-radius: 50%;
+            margin-bottom: 32px;
+            position: relative;
+            i {
+                font-size: 32px;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        &__field {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            min-height: 72px;
+            padding: 14px 20px;
+            .lable {
+                font-family: $roboto;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 140%;
+                margin-bottom: 2px;
+            }
+            .value {
+                font-family: $roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 140%;
+                color: $white;
+            }
+        }
+    }
+    &-collapses {
+        width: 100%;
+        background-color: $gray;
+        border-radius: 4px;
+        padding: 16px 32px;
+        margin-top: 18px;
+        @include sm-block() {
+            margin-top: 0;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            background-color: transparent;
+        }
+        &__item {
+            display: flex;
+            align-items: center;
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+            cursor: pointer;
+            @include sm-block() {
+                position: relative;
+                padding: 16px 32px;
+                background-color: $gray;
+                border-bottom: none;
+                &::before {
+                    content: '';
+                    width: 85%;
+                    height: 1px;
+                    background-color: $black;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                &:nth-child(4) {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+            &:last-child {
+                border-bottom: none;
+                @include sm-block() {
+                    width: 100%;
+                    position: fixed;
+                    bottom: 67px;
+                    left: 0;
+                }
+            }
+            .icon-arrow {
+                transform: rotate(180deg);
+                font-size: 12px;
+            }
+            .name {
+                font-family: $noto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 140%;
+                margin-left: 18px;
+                color: $white;
+            }
+        }
+    }
+    &-mobile {
+        padding: 0 20px;
+        &__bg {
+            display: none;
+            width: 100%;
+            height: 330px;
+            position: absolute;
+            top: -40px;
+            left: 0;
+            z-index: -1;
+            @include sm-block() {
+                display: block;
+            }
+        }
+        &__img {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(180deg, #ADACB0 0%, #86878C 100%);
+            border-radius: 50%;
+            position: relative;
+            margin-right: 15px;
+            i {
+                font-size: 32px;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        &__login {
+            .name {
+                font-family: $noto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 140%;
+                color: $white;
+            }
+        }
+    }
+}

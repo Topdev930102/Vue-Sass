@@ -1,0 +1,193 @@
+.home {
+    &-top {
+        @include m-block() {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: $gray;
+            padding: 15px 15px 0;
+            overflow: hidden;
+            z-index: 1000;
+        }
+        &__left {
+            @include m-block() {
+                order: 2;
+                justify-content: space-between;
+                background-color: $black;
+                width: 100%;
+                padding-top: 20px;
+                position: relative;
+            }
+            @include m-block() {
+                &::before,
+                &::after {
+                    content: '';
+                    width: 30px;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    background-color: $black;
+                }
+                &::before {
+                    left: 100%;
+                }
+                &::after {
+                    right: 100%;
+                }
+            }
+            .btn {
+                @include m-block() {
+                    border: none;
+                    padding: 0;
+                    width: 20px;
+                    overflow: hidden;
+                    i {
+                        font-size: 16px;
+                        &::before {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        &__tabs {
+            @include m-block() {
+                width: 100%;
+                order: 1;
+                margin-bottom: 5px;
+            }
+            .tab-item {
+                @include m-block() {
+                    width: calc(100% / 3);
+                    text-align: center;
+                }
+            }
+        }
+    }
+    &-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include m-block() {
+            display: grid;
+            grid-template-rows: 60px 60px;
+            grid-template-columns: 180px 1fr 1fr;
+            grid-template-areas:
+                            "item1 item2 item4"
+                            "item1 item3 item5";
+
+            .item1 {
+                grid-area: item1;
+                align-self: center;
+            }
+            .item2 {
+                grid-area: item2;
+                align-self: center;
+            }
+            .item3 {
+                grid-area: item3;
+                align-self: center;
+            }
+            .item4 {
+                grid-area: item4;
+                align-self: center;
+            }
+            .item5 {
+                grid-area: item5;
+                align-self: center;
+            }
+        }
+        &__item {
+            width: 15%;
+            background-color: $gray;
+            border-radius: 4px;
+            padding: 20px 24px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 0;
+            @include m-block() {
+                background-color: transparent;
+                padding: 10px;
+                width: 100%;
+            }
+            &:first-child {
+                min-width: 30%;
+                color: $red;
+                font-size: 15px;
+                @include m-block() {
+                    width: 100%;
+                }
+                .item-count {
+                    font-size: 32px;
+                    margin-right: 3px;
+                    color: $red;
+                }
+                i {
+                    font-size: 17px;
+                    line-height: 38px;
+                    &::before {
+                        color: $red;
+                    }
+                }
+            }
+            i {
+                font-size: 12px;
+                display: block;
+                width: fit-content;
+                @include m-block() {
+                    display: none;
+                }
+                &::before {
+                    color: $gray-light;
+                }
+                &.rotate {
+                    transform: rotate(180deg);
+                }
+            }
+            .item-title {
+                font-family: $roboto;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 100%;
+                color: $gray-light;
+                margin: 15px 0 2px;
+            }
+            .item-count {
+                font-family: $roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 140%;
+                color: $white;
+                margin-top: auto;
+                @include m-block() {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    .home-chart {
+        height: 360px;
+    }
+    &-footer {
+        background-color: $gray;
+        border-radius: 4px;
+        @include m-block() {
+            padding: 16px 20px;
+        }
+        button {
+            &:first-child {
+                @include m-block() {
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            @include m-block() {
+                border: none;
+            }
+        }
+    }
+}

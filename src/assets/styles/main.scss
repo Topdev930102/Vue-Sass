@@ -1,0 +1,72 @@
+@import 'fonts/fonts';
+@import 'mixins/mixins';
+@import 'vars';
+@import '../icomoon/style.css';
+
+//Tailwind
+@import 'tailwind/tailwind.css';
+
+@import 'reset';
+@import 'base';
+
+//Button
+@import 'button/button';
+
+//Checkbox
+@import 'app/checkbox';
+
+//Sidebar
+@import 'app/sidebar';
+
+//Navbar
+@import 'app/navbar';
+
+//Card
+@import 'card/card';
+
+//Home
+@import 'home/home';
+
+//Trade
+@import 'trade/trade';
+
+//Order
+@import 'order/order';
+
+//Account
+@import './account/account';
+
+//Details
+@import 'details/details';
+
+//Deposit
+@import 'deposit/deposit';
+
+//Spot
+@import 'spot/spot';
+
+//Overview
+@import 'overview/overview';
+
+//Security
+@import 'security/security';
+
+//Login
+@import 'app/login';
+
+//Datepicker
+@import 'app/datepicker';
+
+//Table
+@import 'app/table';
+
+//Pagination
+@import 'app/pagination';
+
+//Select
+@import 'app/select';
+
+//Modal
+@import 'modal/modal';
+
+@import 'app';

@@ -1,0 +1,103 @@
+.login {
+    width: 78%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h3 {
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 41px;
+        line-height: 140%;
+        color: $white;
+    }
+    form {
+        max-width: 303px;
+        min-width: 303px;
+        button {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+    .input-field {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba($color: #fff, $alpha: 0.2);
+        border-radius: 10px;
+        padding: 14px 20px;
+        margin-bottom: 32px;
+        position: relative;
+        label {
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 140%;
+            color: $gray-light;
+            margin-bottom: 2px;
+        }
+        input[type=text],
+        input[type= password] {
+            background-color: transparent;
+            &::placeholder {
+                font-family: $roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 140%;
+                color: rgba($color: #fff, $alpha: 0.1);
+            }
+        }
+        i {
+            position: absolute;
+            bottom: 16px;
+            right: 16px;
+            cursor: pointer;
+            &.icon-eye {
+                &::before {
+                    color: $blue;
+                }
+            }
+        }
+    }
+    .security-code {
+        max-width: 303px;
+        p {
+            max-width: 190px;
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+            margin-top: 24px;
+            color: $white;
+        }
+        .codes {
+            display: flex;
+            justify-content: space-between;
+            .input-field {
+                padding: 12px 10px;
+                width: 63px;
+                input[type=text] {
+                    font-family: $roboto;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    letter-spacing: -0.03em;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .forgot {
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 140%;
+        color: $gray-light;
+    }
+}

@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?wil5o0');
+  src:  url('fonts/icomoon.eot?wil5o0#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?wil5o0') format('truetype'),
+    url('fonts/icomoon.woff?wil5o0') format('woff'),
+    url('fonts/icomoon.svg?wil5o0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-calendar:before {
+  content: "\e926";
+  color: #888b9a;
+}
+.icon-list:before {
+  content: "\e927";
+  color: #5176cf;
+}
+.icon-chek-2:before {
+  content: "\e928";
+  color: #5176cf;
+}
+.icon-burger:before {
+  content: "\e91f";
+  color: #fff;
+}
+.icon-plus-btn:before {
+  content: "\e918";
+  color: #64a354;
+}
+.icon-minus-btn:before {
+  content: "\e919";
+  color: #d64d5b;
+}
+.icon-order:before {
+  content: "\e901";
+  color: #888b9a;
+}
+.icon-question:before {
+  content: "\e91e";
+  color: #ed983b;
+}
+.icon-tools:before {
+  content: "\e902";
+  color: #5176cf;
+}
+.icon-settings:before {
+  content: "\e903";
+  color: #5176cf;
+}
+.icon-setup:before {
+  content: "\e904";
+  color: #5176cf;
+}
+.icon-help:before {
+  content: "\e905";
+  color: #5176cf;
+}
+.icon-box:before {
+  content: "\e906";
+  color: #5176cf;
+}
+.icon-plus:before {
+  content: "\e907";
+  color: #888b9a;
+}
+.icon-not-eye:before {
+  content: "\e908";
+  color: #888b9a;
+}
+.icon-user:before {
+  content: "\e909";
+  color: #c6c6c8;
+}
+.icon-arrow:before {
+  content: "\e90a";
+  color: #888b9a;
+}
+.icon-alarm:before {
+  content: "\e90b";
+  color: #888b9a;
+}
+.icon-star:before {
+  content: "\e90c";
+  color: #888b9a;
+}
+.icon-info:before {
+  content: "\e90d";
+  color: #888b9a;
+}
+.icon-arrow-top:before {
+  content: "\e90e";
+  color: #888b9a;
+}
+.icon-eye:before {
+  content: "\e90f";
+  color: #d64d5b;
+}
+.icon-email:before {
+  content: "\e910";
+  color: #888b9a;
+}
+.icon-sound:before {
+  content: "\e911";
+  color: #888b9a;
+}
+.icon-chart:before {
+  content: "\e912";
+  color: #888b9a;
+}
+.icon-support:before {
+  content: "\e913";
+  color: #fff;
+}
+.icon-plus-empty:before {
+  content: "\e91c";
+  color: #888b9a;
+}
+.icon-minus-empty:before {
+  content: "\e91d";
+  color: #888b9a;
+}
+.icon-account:before {
+  content: "\e914";
+  color: #888b9a;
+}
+.icon-security:before {
+  content: "\e920";
+  color: #888b9a;
+}
+.icon-overview:before {
+  content: "\e921";
+  color: #888b9a;
+}
+.icon-chek:before {
+  content: "\e922";
+  color: #64a354;
+}
+.icon-password:before {
+  content: "\e923";
+  color: #888b9a;
+}
+.icon-verify:before {
+  content: "\e924";
+  color: #888b9a;
+}
+.icon-funding:before {
+  content: "\e925";
+  color: #5176cf;
+}
+.icon-door:before {
+  content: "\e91b";
+  color: #888b9a;
+}
+.icon-news:before {
+  content: "\e915";
+  color: #888b9a;
+}
+.icon-trade:before {
+  content: "\e916";
+  color: #888b9a;
+}
+.icon-exchange:before {
+  content: "\e91a";
+  color: #fff;
+}
+.icon-today-price:before {
+  content: "\e917";
+  color: #888b9a;
+}
+.icon-home:before {
+  content: "\e900";
+  color: #888b9a;
+}

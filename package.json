@@ -1,0 +1,55 @@
+{
+  "name": "pacific-trading",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "register-service-worker": "^1.7.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuejs-paginate": "^2.1.0",
+    "vuelidate": "^0.7.7",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@fontsource/noto-sans-sc": "^4.5.7",
+    "@vue/cli-plugin-babel": "~4.5.15",
+    "@vue/cli-plugin-eslint": "~4.5.15",
+    "@vue/cli-plugin-pwa": "~4.5.15",
+    "@vue/cli-plugin-router": "~4.5.15",
+    "@vue/cli-plugin-vuex": "~4.5.15",
+    "@vue/cli-service": "~4.5.15",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "autoprefixer": "^9.8.8",
+    "axios": "^0.27.2",
+    "babel-eslint": "^10.1.0",
+    "chart.js": "^3.7.1",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "lint-staged": "^9.5.0",
+    "node-sass": "^4.12.0",
+    "postcss": "^7.0.39",
+    "sass-loader": "^8.0.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
+    "vue-template-compiler": "^2.6.11",
+    "vue2-datepicker": "^3.10.4"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}

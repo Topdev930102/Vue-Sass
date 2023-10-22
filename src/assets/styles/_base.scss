@@ -1,0 +1,36 @@
+body {
+    position: relative;
+    font-family: $noto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: $gray-light;
+    background-color: $black;
+    margin: 0 auto;
+    overflow: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    text-rendering: optimizeLegibility;
+}
+h1 {
+    font-family: $noto;
+    font-style: normal;
+}
+h2 {
+    font-family: $noto;
+    font-style: normal;
+}
+.w-fit {
+    width: fit-content;
+}
+.rotate-180 {
+    transform: rotate(180deg);
+}
+.bg-base {
+    background-color: $gray;
+    border-radius: 4px;
+    padding: 24px;
+}
+.fz-15 {
+    font-size: 15px;
+}

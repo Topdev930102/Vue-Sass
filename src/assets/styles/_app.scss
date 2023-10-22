@@ -1,0 +1,51 @@
+.app {
+    &-main-layout {
+        &.show-sidebar {
+            .sidebar-account {
+                @include l-block() {
+                    display: block;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 100%;
+                    z-index: 1000;
+                    .logo {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    &-content {
+        width: 86%;
+        padding: 0 42px 0 52px;
+        @include l-block() {
+            width: calc(100% - 150px);
+        }
+        @include m-block() {
+            width: 100%;
+            padding: 0 0 60px;
+        }
+        &__account {
+            @include l-block() {
+                width: 100%;
+            }
+            @include sm-block() {
+                padding: 0 0 25px;
+            }
+            .title {
+                @include sm-block() {
+                    position: relative;
+                    .icon-burger {
+                        position: absolute;
+                        top: 50%;
+                        left: 25px;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+}

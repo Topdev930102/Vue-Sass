@@ -1,0 +1,35 @@
+.deposit {
+    &-item {
+        &:last-child {
+            padding: 24px;
+        }
+        &__img {
+            width: 131px;
+            height: 131px;
+            margin-top: auto;
+        }
+        .title-field {
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 140%;
+            color: $gray-light;
+        }
+        ul {
+            margin-bottom: 30px;
+            li {
+                font-family: $roboto;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 130%;
+                color: rgba($color: $gray-light, $alpha: 0.6);
+                margin-bottom: 15px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
